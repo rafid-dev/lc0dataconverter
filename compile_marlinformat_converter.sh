@@ -1,0 +1,1 @@
+cd utils/utils && cargo build --release && cd .. && mv target/release/marlinflow-utils ../marlinflow-utils

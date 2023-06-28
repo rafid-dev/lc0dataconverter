@@ -1,0 +1,26 @@
+files
+tb5
+tb7
+td
+shuffled_files
+*.plain
+*.bin
+*.binpack
+*.zst
+*.zip
+
+# Files from build
+sftools/**/*.o
+sftools/**/*.s
+sftools/src/.depend
+
+# Built binary
+sftools/src/stockfish*
+sftools/src/-lstdc++.res
+
+# Neural network for the NNUE evaluation
+sftools/**/*.nnue
+
+/utils/target
+stockfish
+marlinflow-utils
