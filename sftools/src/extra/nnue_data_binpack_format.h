@@ -7454,6 +7454,10 @@ namespace binpack
             return;
         }
 
+        if (abs(plain.score) >= 1000){
+            return;
+        }
+
         if (stm == chess::Color::White)
         {
             res = "0.5";
@@ -7740,6 +7744,10 @@ namespace binpack
         }
 
         if (plain.ply <= 16){
+            return;
+        }
+
+        if (abs(plain.score) >= 1000){
             return;
         }
 
