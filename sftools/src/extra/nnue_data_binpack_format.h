@@ -7439,7 +7439,7 @@ namespace binpack
         std::string res = "0.0";
         std::string score;
         chess::Color stm = plain.pos.sideToMove();
-        bool inCheck = plain.pos.isCheck();
+        bool inCheck = plain.pos.isCheck() || plain.pos.isCheckAfterMove(plain.move);
         bool capture = plain.pos.pieceAt(plain.move.to) != chess::Piece::none();
 
         if (inCheck){
@@ -7732,7 +7732,7 @@ namespace binpack
         std::string res = "0.0";
         std::string score;
         chess::Color stm = plain.pos.sideToMove();
-        bool inCheck = plain.pos.isCheck();
+        bool inCheck = plain.pos.isCheck() || plain.pos.isCheckAfterMove(plain.move);
         bool capture = plain.pos.pieceAt(plain.move.to) != chess::Piece::none();
 
         if (inCheck){
